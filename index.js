@@ -2,18 +2,17 @@ const express = require('express');
 const app = express();
 
 
+//use static files
+app.use(express.static('./assets')); 
 
 
+//use express router
+app.use('/',require('./routes/router'));
 
 
-
-
-
-
-
-
-
-
+//set up the view engine
+app.set('view engine','ejs');
+app.set('views','./views');
 
 
 //run the server on port 8000
