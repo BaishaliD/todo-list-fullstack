@@ -6,6 +6,42 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form action="add-task" method="POST">
+
+        <input type="text" name="task" placeholder="Enter a task">
+        
+        <input type="radio" id="personal" name="category" value="personal">
+        <label for="personal">Personal</label>
+        <input type="radio" id="work" name="category" value="work">
+        <label for="work">Work</label>
+        <input type="radio" id="school" name="category" value="school">
+        <label for="school">School</label>
+        <input type="radio" id="cleaning" name="category" value="cleaning">
+        <label for="cleaning">Cleaning</label>
+        <input type="radio" id="others" name="category" value="others">
+        <label for="others">Others</label>
+
+        <input class="datepicker" type="date" name="deadline" placeholder="Enter a due date">
+
+        <button type="submit">Add task</button>
+
+    </form>
+
+    <div class="todo-items">
+
+        <div>
+            <% for (let item of todo_list) { %>
+                <div class="todo-desciption"> <%= item.task %> </div>
+                <div class="todo-category"> <%= item.category %> </div>
+                <div class="todo-deadline"> <%= item.deadline %> </div>
+                <div class="delete-button">
+                    <a href="/delete-task/?id=<%= item._id %>">Del</a>
+                </div>
+            <% } %>
+        </div>
+
+    </div>
     
 </body>
 </html>
