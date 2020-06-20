@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <form action="add-task" method="POST">
+    <form action="/add-task" method="POST">
 
         <input type="text" name="task" placeholder="Enter a task">
         
@@ -35,13 +35,20 @@
                 <div class="todo-desciption"> <%= item.task %> </div>
                 <div class="todo-category"> <%= item.category %> </div>
                 <div class="todo-deadline"> <%= item.deadline %> </div>
+                <div class="todo-status"> <%= item.state %> </div>
                 <div class="delete-button">
                     <a href="/delete-task/?id=<%= item._id %>">Del</a>
+                </div>
+                <div class="update-button">
+                    <a href="/update-task/?id=<%=item._id%>&state=true">Done</a>
+                    <a href="/update-task/?id=<%=item._id%>&state=false">Not done</a>
                 </div>
             <% } %>
         </div>
 
     </div>
+
+    <a href="/delete-completed"><button>Delete completed</button></a>
     
 </body>
 </html>

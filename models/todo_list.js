@@ -10,7 +10,7 @@ const todoSchema = new mongoose.Schema({
     category: {
         type: String
     },
-    status: {
+    state: {
         type: Boolean       
     }
 });
