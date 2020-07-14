@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+var moment = require('moment');
 
 //import mongoose, which is used to connect to the DB
 const db = require('./config/mongoose');

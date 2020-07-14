@@ -7,6 +7,7 @@ const todoSchema = new mongoose.Schema({
     deadline: {
         type: Date
     },
+    deadline_string: String,
     category: {
         type: String
     },

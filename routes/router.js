@@ -16,4 +16,6 @@ router.get('/update-task',controller.update);
 
 router.get('/delete-completed',controller.deleteCompleted);
 
+router.get('/delete-all',controller.deleteAll);
+
 module.exports = router;

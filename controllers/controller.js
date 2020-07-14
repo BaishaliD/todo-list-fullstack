@@ -1,4 +1,7 @@
 const todoDb = require('../models/todo_list');
+const { MongooseDocument } = require('mongoose');
+
+var moment = require('moment');
 
 //render the todo list from the database
 module.exports.home = function(req,res){
@@ -21,6 +24,7 @@ module.exports.add = function(req,res){
         task: req.body.task,
         category: req.body.category,
         deadline: req.body.deadline,
+        deadline_string: moment(req.body.deadline).format("DD/MM/YY"),
         state: false
     }, function(err,data){
         if(err){
@@ -56,7 +60,7 @@ module.exports.update = function(req,res){
     
     todoDb.updateOne({_id:id},{$set: {state: currentState}},function(err){        
         if(err){
-            console.log('error in deleting a task',err);
+            console.log('error in updating a task',err);
             return;
         }
         return res.redirect('back');
