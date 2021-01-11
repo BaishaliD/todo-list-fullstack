@@ -1,5 +1,8 @@
 # To-Do list app
 
+![Image 1](assets/todo_fs1.png?raw=true)
+![Image 2](assets/todo_fs2.png?raw=true)
+
 ## Functionality
 
 <p> This is a simple to-do list app that lets you add tasks to the list, with an optional deadline, and a category selected from a dropdown list (also optional). </p>
