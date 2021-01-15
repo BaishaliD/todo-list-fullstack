@@ -13,14 +13,16 @@
 
 ## Required libraries
 
+Intall NodeJS and MongoDB in our system. Then run the following commands to install the required libraries :
+
 1. express
-npm install express
+`npm install express`
 2. ejs
-npm install ejs
+`npm install ejs`
 3. moment
-nom install moment
+`npm install moment`
 4. mongoose
-npm install mongoose
+`npm install mongoose`
 
 ## To run the application
 1. Install the above packages
