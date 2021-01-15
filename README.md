@@ -11,21 +11,10 @@
 
 <p> The 'Deleted Completed' button deletes all the task that are marked as completed. The 'Delete All' button delete all the tasks from the list.</p>
 
-## Required libraries
-
-Intall NodeJS and MongoDB in our system. Then run the following commands to install the required libraries :
-
-1. express
-`npm install express`
-2. ejs
-`npm install ejs`
-3. moment
-`npm install moment`
-4. mongoose
-`npm install mongoose`
 
 ## To run the application
-1. Install the above packages
+1. Intall NodeJS and MongoDB in your system
+1. Open the terminal and navigate to the project directory. Then run 'npm install' to install required libraries.
 2. Fire up the server by typing 'npm start' in the command line
 3. Run localhost:8000 in the browser
 
