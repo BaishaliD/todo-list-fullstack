@@ -13,10 +13,10 @@
 
 
 ## To run the application
-1. Intall NodeJS and MongoDB in your system
-1. Open the terminal and navigate to the project directory. Then run 'npm install' to install required libraries.
-2. Fire up the server by typing 'npm start' in the command line
-3. Run localhost:8000 in the browser
+1. Intall NodeJS and MongoDB in your system.
+1. Open the terminal and navigate to the project directory. Then run `npm install` to install required libraries.
+2. Fire up the server by typing 'npm start' in the command line.
+3. Run localhost:8000 in the browser.
 
 ## Tech stack used:
 HTML, CSS, Vanilla Javascript, NodeJS, ExpressJS, MongoDB.
